@@ -4,6 +4,7 @@ public class invertir_array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		//declaramos array a invertir y la variable que nos va a servir para
 		//intercambiar los valores del array
 		int array[] = {1,2,3,4,5,6,7,8,9};
@@ -11,8 +12,9 @@ public class invertir_array {
 		
 		// imprimimos array para comprobar
 		int longitud=array.length;
-		for (int i = 0; i<=longitud; i++)
-				System.out.print(array[i] + " ");
+//		for (int i = 0; i<=longitud; i++)
+		for (int i = 0; i < longitud; i++)	// 20201126 -eliminamos opción i = array.length	
+			System.out.print(array[i] + " ");
 		
 			// invertimos array recorriéndolo hasta la mitad e intercambiando valores
 		for(int i=0;i<=longitud/2; i++){	//vamos guardando la posición que vamos a intercambiar desde el final
