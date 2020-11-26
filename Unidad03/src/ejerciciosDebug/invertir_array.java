@@ -18,7 +18,7 @@ public class invertir_array {
 		
 			// invertimos array recorriéndolo hasta la mitad e intercambiando valores
 		for(int i=0;i<=longitud/2; i++){	//vamos guardando la posición que vamos a intercambiar desde el final
-			aux = array[longitud-i];
+			aux = array[longitud-i-1];	// 20201126 -longitud-0 sale del límite, ponemos -1 para mantenerlo
 			
 			//como ya tenemos guardada la posición longiutd-i-1, ya podemos guardar en
 			//esa posición un valor
