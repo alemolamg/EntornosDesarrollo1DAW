@@ -7,12 +7,12 @@ public class invertir_array {
 		
 		//declaramos array a invertir y la variable que nos va a servir para
 		//intercambiar los valores del array
-		int array[] = {1,2,3,4,5,6,7,8,9,0};
+		int array[] = {1,2,3,4,5,6,7,8,9};
 		int aux=0;
 		
 		// imprimimos array para comprobar
 		int longitud=array.length;
-		for (int i = 0; i < longitud; i++)	// 20201126 eliminamos opción i = array.length	
+		for (int i = 0; i <= longitud; i++)	// 20201126 eliminamos opción i = array.length	
 			System.out.print(array[i] + " ");
 		
 			// invertimos array recorriéndolo hasta la mitad e intercambiando valores
