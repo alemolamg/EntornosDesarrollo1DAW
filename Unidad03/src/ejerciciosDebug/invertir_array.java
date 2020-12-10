@@ -12,7 +12,7 @@ public class invertir_array {
 		
 		// imprimimos array para comprobar
 		int longitud=array.length;
-		for (int i = 0; i < longitud; i++)	// 20201126 eliminamos opción i = array.length	
+		for (int i = 0; i <= longitud; i++)	// 20201126 eliminamos opción i = array.length	
 			System.out.print(array[i] + " ");
 		
 			// invertimos array recorriéndolo hasta la mitad e intercambiando valores
