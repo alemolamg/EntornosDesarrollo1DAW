@@ -9,9 +9,7 @@ class JunitMenorMayorYPrimos {
 
 	@Test
 	void testMayorMenor() {
-//		fail("Not yet implemented");
 		int vectorEspe[] = {7,11,13};
-		
 		assertArrayEquals(vectorEspe, MenorMayor_Primo.menorMayor(13,11,7));
 	}
 	
@@ -20,7 +18,7 @@ class JunitMenorMayorYPrimos {
 		int numero = 15;
 		int vectorEspe[] = {7,11,13};
 		int vector[] = MenorMayor_Primo.primos(numero);
-		assertEquals(vectorEspe, vector);
+		assertArrayEquals(vectorEspe, vector);
 	}
 
 }
