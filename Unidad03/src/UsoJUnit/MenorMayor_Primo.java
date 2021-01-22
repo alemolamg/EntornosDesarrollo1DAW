@@ -39,7 +39,6 @@ public class MenorMayor_Primo {
 	public static void ordena(int array[]) {
 		int iterator = 0, valorAux = 0, j = 0;
 		
-//	    System.out.println("Programa de ordenación por Inserción directa");
 	    for( iterator = 0; iterator < array.length; iterator++) {
 	    	valorAux = array[iterator];
 	    	for ( j = iterator; j > 0 && array[j - 1] > valorAux; j--) {
