@@ -1,0 +1,50 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>16</y><w>130</w><h>100</h></coordinates><panel_attributes>Compañia
+--
+- nombre: String
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>206</y><w>130</w><h>130</h></coordinates><panel_attributes>Avión
+--
+- codigo: Int
+- nombre: String
+- modelo: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>106</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>86</y><w>150</w><h>130</h></coordinates><panel_attributes>Vuelo
+--
+- avión: Avión
+- compañia: Compañia
+- id_Vuelo: Int
+- fecha: date</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>156</y><w>90</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;40;10;40;100;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>106</y><w>120</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;100;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>96</y><w>160</w><h>90</h></coordinates><panel_attributes>Billete
+--
+- cod_billete: Int
+- vuelo: Vuelo
+- dni: String
+- persona: Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>236</y><w>100</w><h>50</h></coordinates><panel_attributes>Billete Turista
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>176</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>236</y><w>100</w><h>50</h></coordinates><panel_attributes>Billete Preferente
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>176</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;60</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>106</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=n
+m2=1
+&lt; pertenece a</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>16</y><w>160</w><h>90</h></coordinates><panel_attributes>Persona
+--
+- dni: String
+- nombre: String
+- fecha_Nac: Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>186</y><w>110</w><h>100</h></coordinates><panel_attributes>/Equipaje/
+(abstract)
+--
+- ancho: Int
+- alto: Int
+- largo: Int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>346</y><w>100</w><h>50</h></coordinates><panel_attributes>/Equipaje Mano/
+(abstract)
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>456</y><w>150</w><h>80</h></coordinates><panel_attributes>Bolsa
+--
+
+--
++ calcularDimensiones();</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>456</y><w>150</w><h>80</h></coordinates><panel_attributes>Billete Turista
+--
+
+--
++ calcularDimensiones();</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>350</y><w>120</w><h>80</h></coordinates><panel_attributes>Bulto
+--
+- Peso: Int
+--
++ facturar ()
++ pesar ()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>280</y><w>50</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>270</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;80</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>390</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>390</y><w>40</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;20;70</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>50</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;160;60;160;60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>40</y><w>190</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10;170;10</additional_attributes></element></diagram>
